@@ -26,6 +26,7 @@ struct ContentView: View {
                     .resizable()
                     //画面内に収まるように､アスペクト比を指定
                     .aspectRatio(contentMode: .fit)
+                Spacer()
                 Text("グー")
                     //可変的に余白を作成
                     .padding(.bottom)
@@ -36,6 +37,7 @@ struct ContentView: View {
                     .resizable()
                     //画面内に収まるように､アスペクト比を指定
                     .aspectRatio(contentMode: .fit)
+                Spacer()
                 Text("チョキ")
                     //可変的に余白を作成
                     .padding(.bottom)
@@ -46,6 +48,7 @@ struct ContentView: View {
                     .resizable()
                     //画面内に収まるように､アスペクト比を指定
                     .aspectRatio(contentMode: .fit)
+                Spacer()
                 Text("パー")
                     //可変的に余白を作成
                     .padding(.bottom)
