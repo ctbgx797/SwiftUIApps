@@ -13,8 +13,12 @@ struct ContentView: View {
     
     var body: some View {
         VStack{
+            //スペースを追加
+            Spacer()
             if answerNumber == 0{
                 Text("これからじゃんけんをします")
+                    //可変的に余白を作成
+                    .padding(.bottom)
             }else if answerNumber == 1{
                 //1はグー
                 Image("gu")
@@ -22,6 +26,9 @@ struct ContentView: View {
                     .resizable()
                     //画面内に収まるように､アスペクト比を指定
                     .aspectRatio(contentMode: .fit)
+                Text("グー")
+                    //可変的に余白を作成
+                    .padding(.bottom)
             }else if answerNumber == 2{
                 //2はチョキ
                 Image("choki")
@@ -29,6 +36,9 @@ struct ContentView: View {
                     .resizable()
                     //画面内に収まるように､アスペクト比を指定
                     .aspectRatio(contentMode: .fit)
+                Text("チョキ")
+                    //可変的に余白を作成
+                    .padding(.bottom)
             }else {
                 //それ以外はパー
                 Image("pa")
@@ -36,6 +46,9 @@ struct ContentView: View {
                     .resizable()
                     //画面内に収まるように､アスペクト比を指定
                     .aspectRatio(contentMode: .fit)
+                Text("パー")
+                    //可変的に余白を作成
+                    .padding(.bottom)
             }
             
             
@@ -53,17 +66,16 @@ struct ContentView: View {
                     newAnswerNumber = Int.random(in: 1...3)
                     //前回と同じ結果のときは､再度ランダムに数値を出す
                     //異なる結果のときは､repeatを抜ける
-                    
                 }while answerNumber == newAnswerNumber
-                
                 answerNumber = newAnswerNumber
-                
             }) {
                 //Buttonに表示する文字を指定
                 Text("じゃんけんをする!")
-                    .foregroundColor(Color.white)
-                    .padding()
-                    .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.red/*@END_MENU_TOKEN@*/)
+                    .frame(height: 100.0)
+                    .frame(maxWidth: .infinity)
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    .background(Color.pink)
+                    .foregroundColor(.white)
             }//[じゃんけんをする]ボタンここまで
         }
     }
