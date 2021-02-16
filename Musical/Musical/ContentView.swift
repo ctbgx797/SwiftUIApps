@@ -19,8 +19,27 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 //アスペクト比を維持して､短辺基準に収まるようにする
                 .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+            
+            HStack {
+                //シンバルボタン
+                Button(action:{
+                    //ボタンをタップしたときのアクション
+                }){
+                    Image("cymbal")
+                        //ボタン内の画像をカラー画像にする
+                        .renderingMode(.original)
+                }
+                
+                //ギターボタン
+                Button(action:{
+                    //ボタンをタップしたときのアクション
+                }){
+                    Image("guitar")
+                        //ボタン内の画像をカラー画像にする
+                        .renderingMode(.original)
+                }
+            }
         }
-        
     }
 }
 
