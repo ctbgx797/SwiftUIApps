@@ -9,8 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        ZStack {
+            //背景画像を指定
+            Image("background")
+                //リサイズ
+                .resizable()
+                //画面いっぱいになるようにセーフエリアの外いっぱいまで指定
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                //アスペクト比を維持して､短辺基準に収まるようにする
+                .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+        }
+        
     }
 }
 
