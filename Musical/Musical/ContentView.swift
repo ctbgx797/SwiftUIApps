@@ -38,6 +38,8 @@ struct ContentView: View {
                 //ギターボタン
                 Button(action:{
                     //ボタンをタップしたときのアクション
+                    //ギターの音を鳴らす
+                    soundPlayer.guiterPlay()
                 }){
                     Image("guitar")
                         //ボタン内の画像をカラー画像にする
