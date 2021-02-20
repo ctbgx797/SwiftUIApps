@@ -12,6 +12,7 @@
 		3F64CD9325DAAEBF00CBFEA3 /* MusicalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64CD9225DAAEBF00CBFEA3 /* MusicalApp.swift */; };
 		3F64CD9525DAAEBF00CBFEA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64CD9425DAAEBF00CBFEA3 /* ContentView.swift */; };
 		3F64CD9A25DAAEC100CBFEA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F64CD9925DAAEC100CBFEA3 /* Preview Assets.xcassets */; };
+		3FCD9B2925E115460096B04F /* ButtonImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD9B2825E115460096B04F /* ButtonImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3F64CD9625DAAEC100CBFEA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F64CD9925DAAEC100CBFEA3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3F64CD9B25DAAEC100CBFEA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FCD9B2825E115460096B04F /* ButtonImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				3F64CD9225DAAEBF00CBFEA3 /* MusicalApp.swift */,
 				3F64CD9425DAAEBF00CBFEA3 /* ContentView.swift */,
+				3FCD9B2825E115460096B04F /* ButtonImageView.swift */,
 				3F0B36E325DEB40B00582827 /* SoundPlayer.swift */,
 				3F64CD9625DAAEC100CBFEA3 /* Assets.xcassets */,
 				3F64CD9B25DAAEC100CBFEA3 /* Info.plist */,
@@ -143,6 +146,7 @@
 			files = (
 				3F64CD9525DAAEBF00CBFEA3 /* ContentView.swift in Sources */,
 				3F0B36E425DEB40B00582827 /* SoundPlayer.swift in Sources */,
+				3FCD9B2925E115460096B04F /* ButtonImageView.swift in Sources */,
 				3F64CD9325DAAEBF00CBFEA3 /* MusicalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
