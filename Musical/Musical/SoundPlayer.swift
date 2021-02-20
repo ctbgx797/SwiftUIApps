@@ -21,7 +21,7 @@ class SoundPlayer: NSObject {
     func cymbalPlay() {
         do{
             //シンバル用のプレイヤーに､音源データを指定
-            cymbalPlayer = try AVAudioPlayer(data: cymbalData)
+            cymbalPlayer = try AVAudioPlayer(data: self.cymbalData)
             //シンバルの音源再生
             cymbalPlayer.play()
         }catch {
@@ -34,7 +34,7 @@ class SoundPlayer: NSObject {
     func guiterPlay() {
         do{
             //ギター用のプレイヤーに､音源データを指定
-            guiterPlayer = try AVAudioPlayer(data: guiterData)
+            guiterPlayer = try AVAudioPlayer(data: self.guiterData)
             //ギターの音源再生
             guiterPlayer.play()
         }catch {
