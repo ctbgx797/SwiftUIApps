@@ -10,6 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
+        //音を鳴らすためのSoundPlayerクラスのインスタンス生成
+        let soundPlayer = SoundPlayer()
+        
         ZStack {
             //背景画像を指定
             Image("background")
