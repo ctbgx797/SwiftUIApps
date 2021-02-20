@@ -12,11 +12,11 @@ class SoundPlayer: NSObject {
     //シンバルデータの読み込み
     let cymbalData = NSDataAsset(name: "cymbalSound")!.data
     //ギターデータの読み込み
-    let guiterData = NSDataAsset(name: "guitarSound")!.data
+    let guitarData = NSDataAsset(name: "guitarSound")!.data
     //シンバル用プレイヤーの変数
     var cymbalPlayer: AVAudioPlayer!
     //ギター用プレイヤーの変数
-    var guiterPlayer: AVAudioPlayer!
+    var guitarPlayer: AVAudioPlayer!
     
     func cymbalPlay() {
         do{
@@ -31,12 +31,12 @@ class SoundPlayer: NSObject {
     }
     
     
-    func guiterPlay() {
+    func guitarPlay() {
         do{
             //ギター用のプレイヤーに､音源データを指定
-            guiterPlayer = try AVAudioPlayer(data: self.guiterData)
+            guitarPlayer = try AVAudioPlayer(data: self.guitarData)
             //ギターの音源再生
-            guiterPlayer.play()
+            guitarPlayer.play()
         }catch {
             print(" ギターでエラーが発生")
         }

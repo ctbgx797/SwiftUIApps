@@ -30,7 +30,7 @@ struct ContentView: View {
                     //シンバルの音をならす
                     soundPlayer.cymbalPlay()
                 }){
-                   //画像を表示させる
+                    //画像を表示させる
                     ButtonImageView(imageName: "cymbal")
                 }
                 
@@ -38,11 +38,10 @@ struct ContentView: View {
                 Button(action:{
                     //ボタンをタップしたときのアクション
                     //ギターの音を鳴らす
-                    soundPlayer.guiterPlay()
+                    soundPlayer.guitarPlay()
                 }){
-                    ButtonImageView(imageName: "guiter")
-                        //ボタン内の画像をカラー画像にする
-                        .renderingMode(.original)
+                    //画像を表示させる
+                    ButtonImageView(imageName: "guitar")
                 }
             }
         }

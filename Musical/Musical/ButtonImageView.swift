@@ -13,6 +13,7 @@ struct ButtonImageView: View {
     var body: some View {
         //画像を表示
         Image(imageName)
+            //ボタン内の画像をカラー画像にする
             .renderingMode(.original)        
     }
 }
