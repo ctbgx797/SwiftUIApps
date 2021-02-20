@@ -27,6 +27,8 @@ struct ContentView: View {
                 //シンバルボタン
                 Button(action:{
                     //ボタンをタップしたときのアクション
+                    //シンバルの音をならす
+                    soundPlayer.cymbalPlay()
                 }){
                     Image("cymbal")
                         //ボタン内の画像をカラー画像にする
