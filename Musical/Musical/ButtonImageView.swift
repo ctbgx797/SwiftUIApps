@@ -13,8 +13,7 @@ struct ButtonImageView: View {
     var body: some View {
         //画像を表示
         Image(imageName)
-            .renderingMode(.original)
-        
+            .renderingMode(.original)        
     }
 }
 
