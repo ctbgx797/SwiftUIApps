@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct ButtonImageView: View {
+    //画像ファイル名
+    let imageName: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        //画像を表示
+        Image(imageName)
+            .renderingMode(.original)
+        
     }
 }
 
 struct ButtonImageView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonImageView()
+        ButtonImageView(imageName: "cymbal")
     }
 }
