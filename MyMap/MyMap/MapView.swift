@@ -40,15 +40,29 @@ struct MapView: UIViewRepresentable {
                     
                     //位置情報から緯度経度をtargetCoordinateに取り出す
                     let targetCoordinate = location.coordinate
-                    
                     //緯度経度をデバックエリアに表示
                     print(targetCoordinate)
+                    //MKMapとMKPointAnnotationをインスタンスを取得し､ピンを生成
+                    let uiView = MKMapView()
+                    let pin = MKPointAnnotation()
+                    //ピンの置く場所に緯度経度を設定
+                    pin.coordinate = targetCoordinate
+                    //ピンのタイトルを設定
+                    pin.title = searchKey
+                    //ピンを地図に置く
+                    uiView.addAnnotation(pin)
+                    //緯度経度を中心にして､半径500mの範囲を表示
+                    uiView.region = MKCoordinateRegion(
+                        center: targetCoordinate,
+                        latitudinalMeters: 500.0,
+                        longitudinalMeters: 500.0)
                 }
             })
     }
-    
-    struct MapView_Previews: PreviewProvider {
-        static var previews: some View {
-            MapView(searchKey: "東京タワー")
-        }
+}
+
+struct MapView_Previews: PreviewProvider {
+    static var previews: some View {
+        MapView(searchKey: "東京タワー")
     }
+}
